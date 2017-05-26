@@ -1,0 +1,11 @@
+
+prefix=/home/leonardo/dce-quagga/build
+libdir=/home/leonardo/dce-quagga/build/lib
+includedir=/home/leonardo/dce-quagga/build/include
+
+Name: libns3-dce
+Description: ns-3 module dce
+Version: devel
+Libs: -L${libdir} -Wl,-Bdynamic -lns3-dce -L/home/leonardo/dce-quagga/build/lib -pthread -Wl,-Bdynamic -lns3.26-core-debug -lrt -lgsl -lgslcblas -lm -L/home/leonardo/dce-quagga/build/lib -pthread -Wl,-Bdynamic -lns3.26-network-debug -lns3.26-stats-debug -lsqlite3 -lns3.26-core-debug -lrt -lgsl -lgslcblas -lm -L/home/leonardo/dce-quagga/build/lib -pthread -Wl,-Bdynamic -lns3.26-internet-debug -lns3.26-bridge-debug -lns3.26-mpi-debug -lns3.26-traffic-control-debug -lns3.26-network-debug -lns3.26-stats-debug -lsqlite3 -lns3.26-core-debug -lrt -lgsl -lgslcblas -lm
+Cflags: -I${includedir} -pthread -pthread -DHAVE_GSL=1 -I/home/leonardo/dce-quagga/build/include/ns3.26 -pthread -pthread -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/home/leonardo/dce-quagga/build/include/ns3.26 -pthread -pthread -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/home/leonardo/dce-quagga/build/include/ns3.26
+
